@@ -1,2 +1,2 @@
 # Learning
-Practicing with new languages
+Practice with new languages
