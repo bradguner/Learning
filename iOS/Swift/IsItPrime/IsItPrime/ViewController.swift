@@ -20,13 +20,19 @@ class ViewController: UIViewController {
         var i:Int = 2
         if (num != nil) {
             while (!prime) {
-                if (num! % i == 0) {
-                    primeLabel.text = "\(num!) is not prime."
-                    break
-                }
-                if (i == num! || num! == 1) {
+                if (num! == 1) {
                     primeLabel.text = "\(num!) is prime."
                     prime = true
+                }
+                else if (num! % i == 0) {
+                    if (i < num!) {
+                        primeLabel.text = "\(num!) is not prime."
+                        break
+                    }
+                    else if (i == num!) {
+                        primeLabel.text = "\(num!) is prime."
+                        prime = true
+                    }
                 }
                 i++
             }
