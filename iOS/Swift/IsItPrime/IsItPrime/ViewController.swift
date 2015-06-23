@@ -24,7 +24,7 @@ class ViewController: UIViewController {
                     primeLabel.text = "\(num!) is not prime."
                     break
                 }
-                if (i == num!) {
+                if (i == num! || num! == 1) {
                     primeLabel.text = "\(num!) is prime."
                     prime = true
                 }
